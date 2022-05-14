@@ -1,0 +1,98 @@
+.popular-movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 3rem;
+}
+.popular-movies img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.App {
+  margin: 0rem 7rem 0 7rem;
+  padding: 2rem;
+}
+.popular-movies h1 {
+  font-size: 2rem;
+  white-space: wrap;
+  overflow: hidden;
+  /* width: fit-content; */
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.buttons-container button {
+  font-size: 20px;
+  color: #030064;
+  font-family: sans-serif;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: #ebecf5;
+  transition: all 0.2s ease-in-out;
+}
+.buttons-container button:hover,
+.buttons-container button:focus {
+  border: 2px solid blue;
+  color: #ebecf5;
+  background-color: #030064;
+  cursor: pointer;
+}
+.active {
+  border: 2px solid blue;
+  color: #ebecf5;
+  background-color: #030064;
+  cursor: pointer;
+}
+.movieee {
+  margin-top: 2rem;
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.movieee:hover,
+.movieee:focus {
+  margin-top: 2rem;
+  background-color: rgb(157, 198, 211);
+  padding: 1rem;
+  border-radius: 1rem;
+  transform: scale(1.07);
+}
+.movieee img:hover {
+  transform: scale(1.07);
+}
+.the-header {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  background-color: indianred;
+  padding: 1rem;
+  border-radius: 1rem;
+  /* border-radius-bottom: 1rem; */
+  font-family: cursive;
+  /* position: fixed;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  z-index: 100; */
+}
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(233, 234, 237);
+}
